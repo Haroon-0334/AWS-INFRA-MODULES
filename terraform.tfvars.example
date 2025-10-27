@@ -1,0 +1,16 @@
+# Required variables
+account_id = "your-aws-account-id"
+user_name  = "your-iam-username"
+
+# Optional variables with defaults
+region              = "ap-south-1"
+vpc_cidr            = "10.0.0.0/16"
+public_subnet_cidr  = "10.0.1.0/24"
+az                  = "ap-south-1a"
+name_suffix         = "dev"
+instance_type       = "t3.micro"
+ami                 = "ami-02d26659fd82cf299"
+ssh_cidr           = "0.0.0.0/0"  # Consider restricting this to your IP
+site_bucket_name    = ""          # Leave empty for random suffix
+site_bucket_acl     = "private"
+enable_versioning   = false
